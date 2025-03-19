@@ -17,7 +17,7 @@ def home():
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    req =  req.get_json()
+    req =  request.get_json()
     # app.logger.debug(f"Received request: {req}")
     intent = req.get('queryResult', {}).get('intent', {}).get('displayName', '')
     parameters = req.get('queryResult', {}).get('parameters', {})
@@ -31,6 +31,7 @@ def webhook():
     else:
         response_text = "Sorry, I didn't understand that. Can you please try again"
 
+    # app.logger.debug(f"Response: {response_text}")
     return jsonify({'fulfillmentText': response_text})
 
 
