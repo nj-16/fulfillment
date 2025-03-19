@@ -1,4 +1,6 @@
 #
-Fulfillment
+Conversational AI - Semester 1
 
-Conversational AI Dialogflow fulfillment assignment
+Assignment 3 - Dialogflow fulfillment assignment
+Georgian College
+Barrie, Ontario
